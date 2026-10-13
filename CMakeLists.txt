@@ -25,7 +25,7 @@ project(libcutl
     HOMEPAGE_URL "https://www.codesynthesis.com/projects/libcutl/"
 )
 
-option(LIBCUTL_BUILD_TESTS "build libcutl tests" ON)
+option(LIBCUTL_BUILD_TESTS "build libcutl tests" OFF)
 
 include(GNUInstallDirs)
 

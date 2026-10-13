@@ -52,18 +52,18 @@ configure_file(
     COPYONLY
 )
 
-add_executable(compiler-cxx-traversal
-    compiler/cxx-traversal/driver.cxx
+add_executable(compiler-traversal
+    compiler/traversal/driver.cxx
 )
-target_link_libraries(compiler-cxx-traversal PRIVATE cutl)
-add_dependencies(compiler-cxx-traversal cutl)
-add_test(NAME compiler-cxx-traversal
-    COMMAND compiler-cxx-traversal output.std
-    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/compiler/cxx-traversal
+target_link_libraries(compiler-traversal PRIVATE cutl)
+add_dependencies(compiler-traversal cutl)
+add_test(NAME compiler-traversal
+    COMMAND compiler-traversal output.std
+    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/compiler/traversal
 )
 configure_file(
-    ${CMAKE_CURRENT_SOURCE_DIR}/compiler/cxx-traversal/output.std
-    ${CMAKE_CURRENT_BINARY_DIR}/compiler/cxx-traversal/output.std
+    ${CMAKE_CURRENT_SOURCE_DIR}/compiler/traversal/output.std
+    ${CMAKE_CURRENT_BINARY_DIR}/compiler/traversal/output.std
     COPYONLY
 )
 

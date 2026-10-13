@@ -1,4 +1,4 @@
-# Install library
+# install library
 
 install(TARGETS cutl
     EXPORT libcutlTargets
@@ -7,7 +7,7 @@ install(TARGETS cutl
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
-# Install headers
+# install headers
 file(GLOB_RECURSE LIBCUTL_HEADERS CONFIGURE_DEPENDS
     RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}"
     "${CMAKE_CURRENT_SOURCE_DIR}/libcutl/*.hxx"
@@ -26,7 +26,7 @@ set(LIBCUTL_CMAKE_INSTALL_DIR
     "${CMAKE_INSTALL_LIBDIR}/cmake/libcutl"
 )
 
-# Install the exported target information.
+# install the exported target information.
 install(
     EXPORT libcutlTargets
     FILE libcutlTargets.cmake
@@ -34,7 +34,7 @@ install(
     DESTINATION "${LIBCUTL_CMAKE_INSTALL_DIR}"
 )
 
-# Generate libcutlConfig.cmake file
+# generate libcutlConfig.cmake file
 configure_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/cmake/libcutlConfig.cmake.in"
     "${CMAKE_CURRENT_BINARY_DIR}/libcutlConfig.cmake"

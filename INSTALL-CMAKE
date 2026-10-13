@@ -1,0 +1,9 @@
+To build this package is with the cmake generator :
+
+$ cmake -S . -B build
+
+$ cmake --build build
+
+To install related target binaries 
+
+$ sudo cmake --install build

@@ -1,6 +1,8 @@
 >[!CAUTION]
 > libcutl is maintained as a part of [xsd](https://github.com/wissem01chiha/xsd) community fork
 
+[![cmake](https://github.com/wissem01chiha/libcutl/actions/workflows/cmake.yml/badge.svg)](https://github.com/wissem01chiha/libcutl/actions/workflows/cmake.yml)
+
 libcutl is a C++ utility library for compilers. It contains a collection of
 generic and fairly independent components. See doc/components.txt for an
 overview.
